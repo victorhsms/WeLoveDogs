@@ -1,0 +1,420 @@
+/*  Geral */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+/* Logo e Navegação */
+header {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    font-size: 48px;
+    margin: 27px 15px 28px;
+    color: black;
+}
+
+.logo span {
+    color: #7ED321;
+}
+
+/* Navegação */
+#btn-mobile {
+    display: none;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu li {
+    margin: 49px 35px 49px 0;
+    list-style: none;
+}
+
+li a {
+    color: #000;
+}
+
+#link-contato {
+    color: #1C4701;
+}
+
+#menu li:last-child {
+    padding: 9px 32px; 
+    background: rgba(126, 211, 33, 0.4);
+    margin: 40px 15px 40px 0; 
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#menu li a:hover:not(#link-contato) {
+    color: #7ED321;
+    transition: 0.4s;
+}
+
+#menu li:last-child:hover {
+    background: #7ED321;
+    box-shadow: 3px 3px 15px #9F9F9F;
+    transition: 0.8s;
+}
+/* index.html */
+.homepage {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage div {
+    width: 371px;
+    height: 351px;
+    margin: 87px 29px 0 0;
+}
+
+.homepage div p {
+    font-size: 48px;
+}
+
+.homepage div button {
+    padding: 13px 55px;
+    font-size: 18px;
+    color: #1C4701;
+    background: #7ED321;
+    border-radius: 15px;
+    margin: 25px 0 13px;
+    cursor: pointer;
+}
+
+.homepage div button:hover {
+    box-shadow: 3px 3px 15px #9F9F9F;
+    transition: 0.4s;
+}
+
+.homepage img {
+    margin-top: 30px;
+}
+
+/* quemsomos.html */
+.quemsomospage {
+    margin: 30px auto 0;
+}
+
+.quemsomospage h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.quemsomospage p {
+    font-weight: 400;
+    text-align: justify;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.quemsomospage img {
+    display: block;
+    margin: 14px auto 0;
+}
+
+/* blog.html */
+.blogpage h2 {
+    font-size: 48px;
+    margin: 30px 0 50px;
+    text-align: center;
+}
+
+.blogpage section {
+    width: 75%;
+    margin: 0 auto 45px;
+    display: flex;
+}
+
+.blogpage div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.blogpage h3 {
+    font-size: 32px;
+    margin-bottom: 23px;
+}
+
+.blogpage p {
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* Contato.html */
+.contato h2 {
+    font-size: 48px;
+    margin: 56px 0 24px;
+    text-align: center;
+}
+
+/* Formulário*/
+.contato section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+form div{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+form div:not(form div:last-child) {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 18px;
+    margin-right: 45px;
+}
+.mensagemform {
+    width: 124px;
+    text-align: center;
+    margin-right: 14px;
+}
+
+form input:not(.submit), textarea {
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;
+    width: 392px;
+    padding: 12px 13px;
+}
+
+textarea {
+    height: 136px;
+}
+
+::placeholder {
+    color: #9F9F9F;
+    font-size: 14px;
+}
+
+.submit {
+    background: #7ED321;
+    width: 141px;
+    height: 42px;
+    border-radius: 10px;
+    color: #1C4701;
+    font-size: 16px;
+    cursor: pointer;
+    z-index:1000;
+}
+
+.submit:hover {
+    box-shadow: 3px 3px 15px #9F9F9F;
+    transition: 0.4s;
+}
+
+/* Responsivo Laptops (1024px)*/
+@media screen and (max-width: 1124px) {
+    .homepage div {
+        margin-left: 2%;
+    }
+    
+    .quemsomospage p {
+        width: 60%;
+    }
+
+    .blogpage section {
+        width: 85%;    
+    }
+
+    .contato section {
+        flex-direction: column-reverse;
+    }
+
+    .contato img, .contato form {
+        margin-bottom: 24px;
+    }
+}
+
+/* Responsivo Tablet */
+@media screen and (max-width: 970px) {
+    .homepage {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .homepage div {
+        text-align: center;
+        margin: 25px 29px 25px;
+    }
+
+    .homepage img {
+        width: 80%
+    }
+
+    .quemsomospage p {
+        width: 75%;
+    }
+}
+
+/* Responsivo Mobile */
+@media screen and (max-width: 725px) {
+    /* Menu Mobile */
+    #menu {
+        display: block;
+        position:absolute;
+        width: 100%;
+        top: 120px;
+        right: 0;
+        background: white;
+        text-align: center;
+        transition: .6s;
+        z-index:1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(40vh - 120px);
+        visibility: visible;
+    }
+
+    #menu li, #menu li:last-child {
+        margin-right: 0;
+        margin: 31px 0 31px;
+        padding: 18px 0;
+    }
+
+    #menu li:last-child {
+        border-radius: 0;
+        padding: 18px 0px;
+        margin: 31px 0px 40px 0; 
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        color: #7ED321;
+        border-top: 3px solid;
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        margin-top: 12px;
+        background: currentColor;
+        transition: .4s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -14px
+    }
+
+    /* Quem somos */
+    .quemsomospage p {
+        margin: 30px auto;
+        width: 90%;
+    }
+
+    /* Blog */
+    .blogpage section {
+        flex-direction: column;
+    }
+
+    .blogpage div:first-child {
+        justify-content: center;
+    }
+
+    .blogpage h3 {
+        text-align: center;
+    }
+
+    /* Contato */
+    .contato img {
+        width: 100%;
+    }
+
+    form div {
+        flex-direction: column;
+    }
+
+    form label {
+        margin: 0 0 10px 13px;
+        width:max-content;
+    }
+
+    .mensagemform {
+        width:max-content;
+        text-align: left;
+        margin: 0 0 10px 13px;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    .btn-enviar {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .logo {
+        font-size: 32px;
+    }
+
+    .homepage div p {
+        font-size: 36px;
+    }
+
+    .quemsomospage img {
+        width: 100%;
+    }
+
+    .contato section {
+        align-items: center;
+    }
+
+    form {
+        width: 100%;  
+    }
+
+    form input:not(.submit), textarea {
+        width: 90%;
+    }
+    
+    .btn-enviar {
+        align-items: center;
+    }
+}
