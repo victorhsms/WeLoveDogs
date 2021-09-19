@@ -195,6 +195,7 @@ form input:not(.submit), textarea {
 
 textarea {
     height: 136px;
+    resize: none;
 }
 
 ::placeholder {
@@ -281,7 +282,7 @@ textarea {
     }
 
     #nav.active #menu {
-        height: calc(40vh - 120px);
+        height: calc(42vh - 120px);
         visibility: visible;
     }
 
