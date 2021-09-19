@@ -14,7 +14,7 @@ O projeto WeLoveDogs tem por objetivo iniciar o aprendizado em HTML e CSS, 2 das
 
 ### Tarefa
 
-Com base no [mockup²](https://www.figma.com/file/83KrYRp9nXE4wyMIWgxu6O/WeLoveDogs-N%C3%BAcleo-Web?node-id=0%3A1) apresentado, usando HTML e CSS, construa a webpage do grupo social WeLoveDogs.
+Com base no [mockup²](https://www.figma.com/file/kUsiAK6Lh7QHyCOLtAJZi0/WeLoveDogs-Núcleo-Web) apresentado, usando HTML e CSS, construa a webpage do grupo social WeLoveDogs.
 
 _¹Static multipage. Consiste em um modelo da Web de um site com várias páginas, construídas usando HTML e seu conteúdo não muda independemente da solicitação. A única forma de mudar o conteúdo apresentado é alterado diretamente o código da página. O servidor renderizará as página HTML sempre que o usuário clicar em um link no menu do site._
 
